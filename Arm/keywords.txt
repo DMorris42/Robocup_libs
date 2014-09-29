@@ -1,0 +1,4 @@
+Arm   KEYWORD1
+arm_dir_up   KEYWORD2
+arm_dir_down   KEYWORD2
+move_arm   KEYWORD2
