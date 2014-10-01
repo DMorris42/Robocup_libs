@@ -21,6 +21,9 @@ class Morse {
 	void dot(void);
 	void dash(void);
 	
+	//Sets duration of one time unit (a dot is one time unit)
+	void set_element_length(unsigned int length);
+	
 	//Letters and numbers
 	void a(void);
 	void b(void);
@@ -60,9 +63,14 @@ class Morse {
 	void eight(void);
 	void nine(void);
 	
+	void element_space(void);
+	void letter_space(void);
+	void word_space(void);
+	
 	private:
 	
 	int _LED_pin;
+	unsigned int _unit_length;
 };
 
 #endif

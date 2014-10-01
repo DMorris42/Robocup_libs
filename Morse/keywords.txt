@@ -37,3 +37,7 @@ six	KEYWORD2
 seven	KEYWORD2
 eight	KEYWORD2
 nine	KEYWORD2
+set_elemement_length	KEYWORD2
+element_space	KEYWORD2
+letter_space	KEYWORD2
+word_space	KEYWORD2

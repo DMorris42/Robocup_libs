@@ -14,18 +14,22 @@ Morse::Morse (int pin) {
 	pinMode(_LED_pin, OUTPUT);
 }
 
+void Morse::set_element_length (unsigned int length) {
+	_unit_length = length;
+}
+
 void Morse::dot (void) {
 	digitalWrite(_LED_pin, HIGH);
-    delay(200);
+    delay(_unit_length);
     digitalWrite(_LED_pin, LOW);
-    delay(200);
+    delay(_unit_length);
 }
 
 void Morse::dash (void) {
 	digitalWrite(_LED_pin, HIGH);
-    delay(600);
+    delay(3*_unit_length);
     digitalWrite(_LED_pin, LOW);
-    delay(600);
+    delay(3*_unit_length);
 }
 
 void Morse::a (void) {
@@ -266,4 +270,16 @@ void Morse::nine (void) {
 	dash();
 	dash();
 	dot();
+}
+
+void Morse::element_space (void) {
+	delay(_unit_length);
+}
+
+void Morse::letter_space (void) {
+	delay(3*_unit_length);
+}
+
+void Morse::word_space (void) {
+	delay(7*_unit_length);
 }
