@@ -1,5 +1,5 @@
-RP   KEYWORD1
-RP_dir_forward   KEYWORD2
-PR_dir_backward  KEYWORD2
-move_PR   KEYWORD2
-get_current_dir  KEYWORD2
+RP	KEYWORD1
+RP_dir_forward	KEYWORD2
+PR_dir_backward	KEYWORD2
+move_PR	KEYWORD2
+get_current_dir	KEYWORD2
